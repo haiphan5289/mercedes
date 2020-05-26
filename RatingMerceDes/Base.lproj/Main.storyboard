@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RatingMerceDes" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="RatingMerceDes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -164,13 +164,12 @@
                                 <state key="normal" image="ic_back"/>
                                 <connections>
                                     <action selector="btBack:" destination="HNM-yi-j2C" eventType="touchUpInside" id="3bV-Wd-BYV"/>
-                                    <action selector="btBack:" destination="0da-9u-HR0" eventType="touchUpInside" id="kWd-Ii-0jW"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLL-uM-tNv">
                                 <rect key="frame" x="112" y="177" width="800" height="97"/>
-                                <string key="text">Vietnam Start xin lỗi vì chưa đạt được mong đợi của quý khách.
-Quý khách vui lòng cho chúng tôi biết bộ phận khiến bạn chưa hài lòng khi trải nghiệm dịch vụ tại Vietnam Start:</string>
+                                <string key="text">Vietnam Star xin lỗi vì chưa đạt được mong đợi của quý khách.
+Quý khách vui lòng cho chúng tôi biết bộ phận khiến bạn chưa hài lòng khi trải nghiệm dịch vụ tại Vietnam Star:</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -346,7 +345,7 @@ Quý khách vui lòng cho chúng tôi biết bộ phận khiến bạn chưa hà
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zd5-g6-yVP">
                                         <rect key="frame" x="0.0" y="0.0" width="43" height="43"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="43" id="8Aa-p3-hGc"/>
                                         </constraints>
@@ -355,7 +354,7 @@ Quý khách vui lòng cho chúng tôi biết bộ phận khiến bạn chưa hà
                                             <action selector="btCare:" destination="HNM-yi-j2C" eventType="touchUpInside" id="ork-4b-uLy"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bộ phận tiếp đón" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMA-ce-Iht">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bộ phận đón tiếp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMA-ce-Iht">
                                         <rect key="frame" x="59.5" y="9.5" width="147" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -762,6 +761,84 @@ Quý khách vui lòng cho chúng tôi biết bộ phận khiến bạn chưa hà
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FvV-dS-1Tx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1455" y="376"/>
+        </scene>
+        <!--View Rating Again-->
+        <scene sceneID="CZG-q9-Oeq">
+            <objects>
+                <viewController storyboardIdentifier="ViewRatingAgain" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YkD-Cn-Xij" customClass="ViewRatingAgain" customModule="RatingMerceDes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LdI-jo-C0d">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hnb-OB-3Hw">
+                                <rect key="frame" x="153" y="251.5" width="718" height="265"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bạn có muốn thực hiện đánh giá lại?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C1E-Uy-wXb">
+                                        <rect key="frame" x="128.5" y="70" width="461" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9P-6S-kgJ">
+                                        <rect key="frame" x="152.5" y="157" width="193" height="55"/>
+                                        <color key="backgroundColor" red="0.0" green="0.69019607839999997" blue="0.95294117649999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="YRC-6H-9g5"/>
+                                            <constraint firstAttribute="width" constant="193" id="d7v-1F-nck"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="Có">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btYesAction:" destination="YkD-Cn-Xij" eventType="touchUpInside" id="z0d-nw-qTB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cfs-d1-Zno">
+                                        <rect key="frame" x="372.5" y="157" width="193" height="55"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="GJQ-4f-dby"/>
+                                            <constraint firstAttribute="width" constant="193" id="u68-77-uLK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="Không">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btNo:" destination="YkD-Cn-Xij" eventType="touchUpInside" id="o9g-jI-lpb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="C1E-Uy-wXb" firstAttribute="top" secondItem="hnb-OB-3Hw" secondAttribute="top" constant="70" id="OUl-EI-Y5M"/>
+                                    <constraint firstAttribute="height" constant="265" id="Psu-VM-IHg"/>
+                                    <constraint firstItem="Cfs-d1-Zno" firstAttribute="centerX" secondItem="hnb-OB-3Hw" secondAttribute="centerX" constant="110" id="SDU-iQ-pUg"/>
+                                    <constraint firstItem="Cfs-d1-Zno" firstAttribute="centerY" secondItem="e9P-6S-kgJ" secondAttribute="centerY" id="bun-kD-hpk"/>
+                                    <constraint firstItem="C1E-Uy-wXb" firstAttribute="centerX" secondItem="hnb-OB-3Hw" secondAttribute="centerX" id="eI2-pa-rRi"/>
+                                    <constraint firstItem="e9P-6S-kgJ" firstAttribute="centerX" secondItem="hnb-OB-3Hw" secondAttribute="centerX" constant="-110" id="ljx-I3-Cqx"/>
+                                    <constraint firstAttribute="bottom" secondItem="e9P-6S-kgJ" secondAttribute="bottom" constant="53" id="n2W-an-y1W"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hnb-OB-3Hw" firstAttribute="leading" secondItem="YYx-hQ-UFY" secondAttribute="leading" constant="153" id="Jmz-Db-P6z"/>
+                            <constraint firstItem="hnb-OB-3Hw" firstAttribute="centerY" secondItem="YYx-hQ-UFY" secondAttribute="centerY" id="KxK-uD-RAa"/>
+                            <constraint firstItem="hnb-OB-3Hw" firstAttribute="centerX" secondItem="YYx-hQ-UFY" secondAttribute="centerX" id="PzR-m5-QLN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YYx-hQ-UFY"/>
+                    </view>
+                    <connections>
+                        <outlet property="btNo" destination="Cfs-d1-Zno" id="1h2-nA-oRL"/>
+                        <outlet property="btYes" destination="e9P-6S-kgJ" id="hK4-Zw-HXa"/>
+                        <outlet property="vContent" destination="hnb-OB-3Hw" id="jDW-z4-bwB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hYX-wY-OQo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2106" y="363"/>
         </scene>
     </scenes>
     <resources>

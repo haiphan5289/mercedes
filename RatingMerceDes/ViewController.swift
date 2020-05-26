@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func moveViewSelect(_ sender: UIButton) {
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "ViewSelect") as! ViewSelect
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewSelect") as! ViewSelect
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true, completion: nil)
     }

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		526A6BE12476CC2500C6543A /* ViewHappyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A6BDF2476CC2500C6543A /* ViewHappyCell.swift */; };
 		526A6BE22476CC2500C6543A /* ViewHappyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 526A6BE02476CC2500C6543A /* ViewHappyCell.xib */; };
+		526E9C91247CE39300F45E76 /* ViewRatingAgain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526E9C90247CE39300F45E76 /* ViewRatingAgain.swift */; };
 		529190DF2475631B00D7EE31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529190DE2475631B00D7EE31 /* AppDelegate.swift */; };
 		529190E12475631B00D7EE31 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529190E02475631B00D7EE31 /* SceneDelegate.swift */; };
 		529190E32475631B00D7EE31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529190E22475631B00D7EE31 /* ViewController.swift */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		526A6BDF2476CC2500C6543A /* ViewHappyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHappyCell.swift; sourceTree = "<group>"; };
 		526A6BE02476CC2500C6543A /* ViewHappyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewHappyCell.xib; sourceTree = "<group>"; };
+		526E9C90247CE39300F45E76 /* ViewRatingAgain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRatingAgain.swift; sourceTree = "<group>"; };
 		529190DB2475631B00D7EE31 /* RatingMerceDes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RatingMerceDes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		529190DE2475631B00D7EE31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		529190E02475631B00D7EE31 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				526A6BDF2476CC2500C6543A /* ViewHappyCell.swift */,
 				526A6BE02476CC2500C6543A /* ViewHappyCell.xib */,
 				529190E42475631B00D7EE31 /* Main.storyboard */,
+				526E9C90247CE39300F45E76 /* ViewRatingAgain.swift */,
 				529190EA2475631D00D7EE31 /* Assets.xcassets */,
 				529190EC2475631D00D7EE31 /* LaunchScreen.storyboard */,
 				529190EF2475631D00D7EE31 /* Info.plist */,
@@ -174,6 +177,7 @@
 				529190F624756B1400D7EE31 /* ViewSelect.swift in Sources */,
 				526A6BE12476CC2500C6543A /* ViewHappyCell.swift in Sources */,
 				52F0353F24758487001CB43C /* CellViewResultRating.swift in Sources */,
+				526E9C91247CE39300F45E76 /* ViewRatingAgain.swift in Sources */,
 				52F0353C24757D0A001CB43C /* ViewResultRatingSad.swift in Sources */,
 				529190DF2475631B00D7EE31 /* AppDelegate.swift in Sources */,
 				529190E12475631B00D7EE31 /* SceneDelegate.swift in Sources */,
@@ -323,7 +327,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XAWKSU84ZK;
 				INFOPLIST_FILE = RatingMerceDes/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -342,7 +346,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XAWKSU84ZK;
 				INFOPLIST_FILE = RatingMerceDes/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -50,11 +50,15 @@ class ViewRatingSad: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func btBack(_ sender: UIButton) {
-        self.dismiss(animated: true, completion: nil)
+            let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewRatingAgain") as! ViewRatingAgain
+            vc.modalPresentationStyle = .overFullScreen
+            vc.listener = self
+//            vc.listService = self.listService
+            self.present(vc, animated: true, completion: nil)
     }
     
     @IBAction func btContinue(_ sender: UIButton) {
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "ViewResultRatingSad") as! ViewResultRatingSad
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewResultRatingSad") as! ViewResultRatingSad
         vc.modalPresentationStyle = .fullScreen
         vc.listService = self.listService
         self.present(vc, animated: true, completion: nil)
@@ -111,7 +115,7 @@ class ViewRatingSad: UIViewController {
             self.imgCare.image = UIImage()
         } else {
             self.btCare.isSelected = true
-            self.addList(isSelect: true, text: "Bộ phận tiếp đón")
+            self.addList(isSelect: true, text: "Bộ phận đón tiếp")
             self.btCare.setImage(UIImage(named: "check"), for: .normal)
             self.imgCare.image = UIImage(named: "check")
         }
@@ -142,6 +146,13 @@ class ViewRatingSad: UIViewController {
             }
         }
         
+    }
+    
+    
+}
+extension ViewRatingSad: ViewRatingAgainAction {
+    func dismiss() {
+        self.dismiss(animated: true, completion: nil)
     }
     
     

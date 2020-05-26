@@ -26,13 +26,13 @@ class ViewSelect: UIViewController {
     }
     
     @IBAction func moveRatingSad(_ sender: UIButton) {
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "ViewRatingSad") as! ViewRatingSad
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewRatingSad") as! ViewRatingSad
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true, completion: nil)
     }
 
     @IBAction func moveHappy(_ sender: UIButton) {
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "ViewHappy") as! ViewHappy
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewHappy") as! ViewHappy
                vc.modalPresentationStyle = .fullScreen
                self.present(vc, animated: true, completion: nil)
     }
