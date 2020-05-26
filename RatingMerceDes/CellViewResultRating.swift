@@ -11,11 +11,14 @@ import UIKit
 class CellViewResultRating: UICollectionViewCell {
 
     var btDismis: (() -> Void)?
+    var btEyesAction: (() -> Void)?
     @IBOutlet weak var viewservices: UIView!
     @IBOutlet weak var lbListServices: UILabel!
     @IBOutlet weak var viewSorry: UIView!
     @IBOutlet weak var btNo: UIButton!
+    @IBOutlet weak var lbServices: UILabel!
     @IBOutlet weak var viewRatingAgain: UIView!
+    @IBOutlet weak var btEyes: UIButton!
     var btYes: (() -> Void)?
     var btNoAction: (() -> Void)?
     override func awakeFromNib() {
@@ -35,4 +38,7 @@ class CellViewResultRating: UICollectionViewCell {
         self.btYes?()
     }
     
+    @IBAction func btEyes(_ sender: Any) {
+        self.btEyesAction?()
+    }
 }

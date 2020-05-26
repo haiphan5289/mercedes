@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol ViewHappyListner {
+    func dismissViewHappyListner()
+}
+
 class ViewHappy: UIViewController {
     var collect: UICollectionView = {
         //khơi tạo layout thì collective mới hoạt động
@@ -23,6 +27,7 @@ class ViewHappy: UIViewController {
         
         return v
     }()
+    var listner: ViewHappyListner?
     var veticalbtregister: [NSLayoutConstraint]?
     var hozrizontalbtregister: [NSLayoutConstraint]?
     //add UIPageControl
@@ -96,8 +101,17 @@ class ViewHappy: UIViewController {
         btDismissAction.heightAnchor.constraint(equalToConstant: 40).isActive = true
         
     }
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+          return .lightContent
+    }
+    
     @objc func actionDismiss() {
-        self.dismiss(animated: true, completion: nil)
+//        self.dismiss(animated: true, completion: nil)
+        let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewRatingAgain") as! ViewRatingAgain
+                      vc.modalPresentationStyle = .overFullScreen
+                      vc.listener = self
+          //            vc.listService = self.listService
+                      self.present(vc, animated: true, completion: nil)
     }
     @objc func next_page(){
         //Nếu là page cuối thì không làm gì cả
@@ -190,7 +204,12 @@ class ViewHappy: UIViewController {
        }
 
     @IBAction func action(_ sender: UIButton) {
-        self.dismiss(animated: true, completion: nil)
+//        self.dismiss(animated: true, completion: nil)
+        let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewRatingAgain") as! ViewRatingAgain
+                    vc.modalPresentationStyle = .overFullScreen
+                    vc.listener = self
+        //            vc.listService = self.listService
+                    self.present(vc, animated: true, completion: nil)
     }
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return .landscapeLeft
@@ -209,21 +228,21 @@ extension ViewHappy: UICollectionViewDelegate, UICollectionViewDataSource, UICol
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! ViewHappyCell
         switch indexPath.row {
         case 0:
-            cell.imgCener.image = UIImage(named: "Screenshot_1-1")
+            cell.imgCener.image = UIImage(named: "ss_1_1")
             cell.vTks.isHidden = true
             cell.vImage.isHidden = false
         case 1:
-            cell.imgCener.image = UIImage(named: "Screenshot_2-2")
+            cell.imgCener.image = UIImage(named: "ss_2_2")
             cell.vTks.isHidden = true
             cell.vImage.isHidden = false
         case 2:
-            cell.imgCener.image = UIImage(named: "screenshot_3-3")
+            cell.imgCener.image = UIImage(named: "ss_3_3")
             cell.vTks.isHidden = true
             cell.vImage.isHidden = false
         case 3:
-            cell.imgCener.image = UIImage(named: "ss_42")
-            cell.imgLeft.image = UIImage(named: "ss_41")
-            cell.imgRight.image = UIImage(named: "ss_43")
+            cell.imgCener.image = UIImage(named: "ss_4_2")
+            cell.imgLeft.image = UIImage(named: "ss_4_1")
+            cell.imgRight.image = UIImage(named: "ss_4_3")
         default:
             cell.vTks.isHidden = false
             cell.vImage.isHidden = true
@@ -286,4 +305,16 @@ class page {
         self.title = title
         self.des = des
     }
+}
+
+extension ViewHappy: ViewRatingAgainAction {
+    func dismiss() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.dismiss(animated: true, completion: nil)
+            self.listner?.dismissViewHappyListner()
+        }
+        
+    }
+    
+    
 }

@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol ViewResultRatingSadListner {
+    func dismissViewResultRatingSadListner()
+}
+
 class ViewResultRatingSad: UIViewController {
     
     var collect: UICollectionView = {
@@ -31,6 +35,7 @@ class ViewResultRatingSad: UIViewController {
     var veticalbtregister: [NSLayoutConstraint]?
     var hozrizontalbtregister: [NSLayoutConstraint]?
     var listService: [String] = []
+    var listner: ViewResultRatingSadListner?
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -49,6 +54,9 @@ class ViewResultRatingSad: UIViewController {
         view.addConstraints(veticalbtregister!)
         view.addConstraints(hozrizontalbtregister!)
         
+    }
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+          return .lightContent
     }
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
@@ -76,14 +84,15 @@ class ViewResultRatingSad: UIViewController {
 }
 extension ViewResultRatingSad: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return 2
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CellViewResultRating
         if indexPath.row == 1 {
-            let text = self.listService.joined(separator: ", ")
-            cell.lbListServices.text = "Chưa hài lòng bộ phận: " + text + "."
+            let text = self.listService.joined(separator: "\n- ")
+            cell.lbListServices.text = "Chưa hài lòng bộ phận: "
+            cell.lbServices.text = "- " + text
             cell.viewservices.isHidden = false
             cell.viewSorry.isHidden = true
             cell.viewRatingAgain.isHidden = true
@@ -98,13 +107,23 @@ extension ViewResultRatingSad: UICollectionViewDelegate, UICollectionViewDataSou
             
         }
         cell.btDismis = {
-            self.dismiss(animated: true, completion: nil)
+//            self.dismiss(animated: true, completion: nil)
+            let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewRatingAgain") as! ViewRatingAgain
+                        vc.modalPresentationStyle = .overFullScreen
+                        vc.listener = self
+            //            vc.listService = self.listService
+                        self.present(vc, animated: true, completion: nil)
         }
         cell.btYes = {
             self.dismiss(animated: true, completion: nil)
         }
         cell.btNoAction = {
             self.dismiss(animated: true, completion: nil)
+        }
+        
+        cell.btEyesAction = {
+            let index = IndexPath(row: 1, section: 0)
+            self.collect.scrollToItem(at: index, at: .centeredHorizontally, animated: true)
         }
         return cell
     }
@@ -119,4 +138,10 @@ extension ViewResultRatingSad: UICollectionViewDelegate, UICollectionViewDataSou
     
     
 }
-
+extension ViewResultRatingSad: ViewRatingAgainAction {
+    func dismiss() {
+        self.dismiss(animated: true, completion: nil)
+        self.listner?.dismissViewResultRatingSadListner()
+    }
+    
+}

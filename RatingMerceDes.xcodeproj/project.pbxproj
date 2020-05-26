@@ -23,6 +23,14 @@
 		52F0353C24757D0A001CB43C /* ViewResultRatingSad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F0353B24757D0A001CB43C /* ViewResultRatingSad.swift */; };
 		52F0353F24758487001CB43C /* CellViewResultRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F0353D24758487001CB43C /* CellViewResultRating.swift */; };
 		52F0354024758487001CB43C /* CellViewResultRating.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52F0353E24758487001CB43C /* CellViewResultRating.xib */; };
+		52F1DFD3247D2868000D7FC1 /* CorpoS (VN) Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52F1DFCB247D2868000D7FC1 /* CorpoS (VN) Italic.ttf */; };
+		52F1DFD4247D2868000D7FC1 /* CorpoA (VN) Bold Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52F1DFCC247D2868000D7FC1 /* CorpoA (VN) Bold Italic.ttf */; };
+		52F1DFD5247D2868000D7FC1 /* CorpoS (VN) Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52F1DFCD247D2868000D7FC1 /* CorpoS (VN) Bold.ttf */; };
+		52F1DFD6247D2868000D7FC1 /* CorpoS (VN) Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52F1DFCE247D2868000D7FC1 /* CorpoS (VN) Regular.ttf */; };
+		52F1DFD7247D2868000D7FC1 /* CorpoA (VN) Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52F1DFCF247D2868000D7FC1 /* CorpoA (VN) Bold.ttf */; };
+		52F1DFD8247D2868000D7FC1 /* CorpoS (VN) Bold Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52F1DFD0247D2868000D7FC1 /* CorpoS (VN) Bold Italic.ttf */; };
+		52F1DFD9247D2868000D7FC1 /* CorpoA (VN) Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52F1DFD1247D2868000D7FC1 /* CorpoA (VN) Regular.ttf */; };
+		52F1DFDA247D2868000D7FC1 /* CorpoA (VN) Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52F1DFD2247D2868000D7FC1 /* CorpoA (VN) Italic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +52,14 @@
 		52F0353B24757D0A001CB43C /* ViewResultRatingSad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewResultRatingSad.swift; sourceTree = "<group>"; };
 		52F0353D24758487001CB43C /* CellViewResultRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewResultRating.swift; sourceTree = "<group>"; };
 		52F0353E24758487001CB43C /* CellViewResultRating.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellViewResultRating.xib; sourceTree = "<group>"; };
+		52F1DFCB247D2868000D7FC1 /* CorpoS (VN) Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CorpoS (VN) Italic.ttf"; sourceTree = "<group>"; };
+		52F1DFCC247D2868000D7FC1 /* CorpoA (VN) Bold Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CorpoA (VN) Bold Italic.ttf"; sourceTree = "<group>"; };
+		52F1DFCD247D2868000D7FC1 /* CorpoS (VN) Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CorpoS (VN) Bold.ttf"; sourceTree = "<group>"; };
+		52F1DFCE247D2868000D7FC1 /* CorpoS (VN) Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CorpoS (VN) Regular.ttf"; sourceTree = "<group>"; };
+		52F1DFCF247D2868000D7FC1 /* CorpoA (VN) Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CorpoA (VN) Bold.ttf"; sourceTree = "<group>"; };
+		52F1DFD0247D2868000D7FC1 /* CorpoS (VN) Bold Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CorpoS (VN) Bold Italic.ttf"; sourceTree = "<group>"; };
+		52F1DFD1247D2868000D7FC1 /* CorpoA (VN) Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CorpoA (VN) Regular.ttf"; sourceTree = "<group>"; };
+		52F1DFD2247D2868000D7FC1 /* CorpoA (VN) Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CorpoA (VN) Italic.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,12 +105,28 @@
 				526A6BE02476CC2500C6543A /* ViewHappyCell.xib */,
 				529190E42475631B00D7EE31 /* Main.storyboard */,
 				526E9C90247CE39300F45E76 /* ViewRatingAgain.swift */,
+				52F1DFCA247D284B000D7FC1 /* Font */,
 				529190EA2475631D00D7EE31 /* Assets.xcassets */,
 				529190EC2475631D00D7EE31 /* LaunchScreen.storyboard */,
 				529190EF2475631D00D7EE31 /* Info.plist */,
 				529190E72475631B00D7EE31 /* RatingMerceDes.xcdatamodeld */,
 			);
 			path = RatingMerceDes;
+			sourceTree = "<group>";
+		};
+		52F1DFCA247D284B000D7FC1 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				52F1DFCC247D2868000D7FC1 /* CorpoA (VN) Bold Italic.ttf */,
+				52F1DFCF247D2868000D7FC1 /* CorpoA (VN) Bold.ttf */,
+				52F1DFD2247D2868000D7FC1 /* CorpoA (VN) Italic.ttf */,
+				52F1DFD1247D2868000D7FC1 /* CorpoA (VN) Regular.ttf */,
+				52F1DFD0247D2868000D7FC1 /* CorpoS (VN) Bold Italic.ttf */,
+				52F1DFCD247D2868000D7FC1 /* CorpoS (VN) Bold.ttf */,
+				52F1DFCB247D2868000D7FC1 /* CorpoS (VN) Italic.ttf */,
+				52F1DFCE247D2868000D7FC1 /* CorpoS (VN) Regular.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,10 +188,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				526A6BE22476CC2500C6543A /* ViewHappyCell.xib in Resources */,
+				52F1DFD6247D2868000D7FC1 /* CorpoS (VN) Regular.ttf in Resources */,
 				52F0354024758487001CB43C /* CellViewResultRating.xib in Resources */,
+				52F1DFDA247D2868000D7FC1 /* CorpoA (VN) Italic.ttf in Resources */,
+				52F1DFD4247D2868000D7FC1 /* CorpoA (VN) Bold Italic.ttf in Resources */,
 				529190EE2475631D00D7EE31 /* LaunchScreen.storyboard in Resources */,
+				52F1DFD5247D2868000D7FC1 /* CorpoS (VN) Bold.ttf in Resources */,
+				52F1DFD9247D2868000D7FC1 /* CorpoA (VN) Regular.ttf in Resources */,
 				529190EB2475631D00D7EE31 /* Assets.xcassets in Resources */,
 				529190E62475631B00D7EE31 /* Main.storyboard in Resources */,
+				52F1DFD8247D2868000D7FC1 /* CorpoS (VN) Bold Italic.ttf in Resources */,
+				52F1DFD7247D2868000D7FC1 /* CorpoA (VN) Bold.ttf in Resources */,
+				52F1DFD3247D2868000D7FC1 /* CorpoS (VN) Italic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +365,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 202005262140;
 				DEVELOPMENT_TEAM = XAWKSU84ZK;
 				INFOPLIST_FILE = RatingMerceDes/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -332,7 +373,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = haiphan.RatingMerceDes;
+				PRODUCT_BUNDLE_IDENTIFIER = RatingMerceDes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -344,14 +385,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XAWKSU84ZK;
+				CURRENT_PROJECT_VERSION = 202005262140;
+				DEVELOPMENT_TEAM = LT86459M95;
 				INFOPLIST_FILE = RatingMerceDes/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = haiphan.RatingMerceDes;
+				PRODUCT_BUNDLE_IDENTIFIER = RatingMerceDes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

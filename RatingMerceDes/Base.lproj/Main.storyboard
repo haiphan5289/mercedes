@@ -2,10 +2,19 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="ipad9_7" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="CorpoA (VN) Regular.ttf">
+            <string>CorporateAVN-Regular</string>
+        </array>
+        <array key="CorpoS (VN) Regular.ttf">
+            <string>CorporateSVN-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -16,31 +25,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fa8-Aj-5sK">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="157"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="137"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_mercedes" translatesAutoresizingMaskIntoConstraints="NO" id="3gO-D3-5PZ">
-                                        <rect key="frame" x="120" y="92" width="220" height="65"/>
+                                        <rect key="frame" x="120" y="70" width="220" height="65"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="65" id="esX-Uk-WIa"/>
                                             <constraint firstAttribute="width" constant="220" id="ofg-Tt-td2"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_circle" translatesAutoresizingMaskIntoConstraints="NO" id="4Wd-ui-pug">
-                                        <rect key="frame" x="860" y="102.5" width="44" height="44"/>
+                                        <rect key="frame" x="860" y="80.5" width="44" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="44" id="AMz-o3-uCu"/>
                                             <constraint firstAttribute="height" constant="44" id="rz9-tr-k9d"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vietnam Star Automobile" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="THN-qX-Fyu">
-                                        <rect key="frame" x="694.5" y="106.5" width="150.5" height="16"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <rect key="frame" x="678.5" y="84.5" width="166.5" height="17"/>
+                                        <fontDescription key="fontDescription" name="CorporateSVN-Regular" family="CorpoS (VN)" pointSize="15"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Điện thoại: 18006142" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTh-Z4-V93">
-                                        <rect key="frame" x="715.5" y="129.5" width="129.5" height="16"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <rect key="frame" x="701.5" y="108.5" width="143.5" height="17"/>
+                                        <fontDescription key="fontDescription" name="CorporateSVN-Regular" family="CorpoS (VN)" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -48,9 +57,9 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="ZTh-Z4-V93" firstAttribute="top" secondItem="THN-qX-Fyu" secondAttribute="bottom" constant="7" id="5Jh-EX-cAw"/>
-                                    <constraint firstItem="3gO-D3-5PZ" firstAttribute="top" secondItem="fa8-Aj-5sK" secondAttribute="top" constant="92" id="6Gw-mh-S8x"/>
+                                    <constraint firstItem="3gO-D3-5PZ" firstAttribute="top" secondItem="fa8-Aj-5sK" secondAttribute="top" constant="70" id="6Gw-mh-S8x"/>
                                     <constraint firstItem="4Wd-ui-pug" firstAttribute="leading" secondItem="THN-qX-Fyu" secondAttribute="trailing" constant="15" id="KKZ-W4-6fP"/>
-                                    <constraint firstAttribute="height" constant="157" id="PQk-4D-neA"/>
+                                    <constraint firstAttribute="height" constant="137" id="PQk-4D-neA"/>
                                     <constraint firstItem="THN-qX-Fyu" firstAttribute="trailing" secondItem="ZTh-Z4-V93" secondAttribute="trailing" id="Pux-uz-a8D"/>
                                     <constraint firstItem="4Wd-ui-pug" firstAttribute="top" secondItem="THN-qX-Fyu" secondAttribute="top" constant="-4" id="fWB-a7-H9O"/>
                                     <constraint firstItem="THN-qX-Fyu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="3gO-D3-5PZ" secondAttribute="trailing" constant="8" symbolic="YES" id="mng-Rt-sVh"/>
@@ -61,15 +70,15 @@
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_home_img" translatesAutoresizingMaskIntoConstraints="NO" id="2bm-Ic-KoY">
-                                <rect key="frame" x="0.0" y="157" width="1024" height="611"/>
+                                <rect key="frame" x="0.0" y="137" width="1024" height="631"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5G-eY-oEe">
-                                <rect key="frame" x="597" y="550" width="307" height="65"/>
+                                <rect key="frame" x="597" y="540" width="307" height="65"/>
                                 <color key="backgroundColor" red="0.0" green="0.69019607843137254" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="cMx-hE-QLG"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="CorporateSVN-Regular" family="CorpoS (VN)" pointSize="24"/>
                                 <state key="normal" title="Bắt Đầu Ngay">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -111,31 +120,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Um1-nE-jqg">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="157"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="137"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_mercedes" translatesAutoresizingMaskIntoConstraints="NO" id="Whs-UT-A1X">
-                                        <rect key="frame" x="120" y="92" width="220" height="65"/>
+                                        <rect key="frame" x="120" y="70" width="220" height="65"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="220" id="lFF-B1-mTI"/>
                                             <constraint firstAttribute="height" constant="65" id="mJz-v4-UHf"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_circle" translatesAutoresizingMaskIntoConstraints="NO" id="xVa-KA-yJA">
-                                        <rect key="frame" x="860" y="102.5" width="44" height="44"/>
+                                        <rect key="frame" x="860" y="80.5" width="44" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="44" id="72B-0c-3YH"/>
                                             <constraint firstAttribute="height" constant="44" id="PWc-fA-Kgh"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vietnam Star Automobile" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Acr-AJ-JU1">
-                                        <rect key="frame" x="694.5" y="106.5" width="150.5" height="16"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <rect key="frame" x="678.5" y="84.5" width="166.5" height="17"/>
+                                        <fontDescription key="fontDescription" name="CorporateSVN-Regular" family="CorpoS (VN)" pointSize="15"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Điện thoại: 18006142" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmc-IC-HKh">
-                                        <rect key="frame" x="715.5" y="129.5" width="129.5" height="16"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <rect key="frame" x="701.5" y="108.5" width="143.5" height="17"/>
+                                        <fontDescription key="fontDescription" name="CorporateSVN-Regular" family="CorpoS (VN)" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -143,8 +152,8 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="rmc-IC-HKh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Whs-UT-A1X" secondAttribute="trailing" constant="8" symbolic="YES" id="1ve-PV-BkJ"/>
-                                    <constraint firstAttribute="height" constant="157" id="6AX-Js-MSj"/>
-                                    <constraint firstItem="Whs-UT-A1X" firstAttribute="top" secondItem="Um1-nE-jqg" secondAttribute="top" constant="92" id="E0i-rK-Ow6"/>
+                                    <constraint firstAttribute="height" constant="137" id="6AX-Js-MSj"/>
+                                    <constraint firstItem="Whs-UT-A1X" firstAttribute="top" secondItem="Um1-nE-jqg" secondAttribute="top" constant="70" id="E0i-rK-Ow6"/>
                                     <constraint firstItem="rmc-IC-HKh" firstAttribute="top" secondItem="Acr-AJ-JU1" secondAttribute="bottom" constant="7" id="KSk-OS-kvz"/>
                                     <constraint firstItem="Acr-AJ-JU1" firstAttribute="trailing" secondItem="rmc-IC-HKh" secondAttribute="trailing" id="YSW-Hr-Ozs"/>
                                     <constraint firstItem="xVa-KA-yJA" firstAttribute="leading" secondItem="Acr-AJ-JU1" secondAttribute="trailing" constant="15" id="ecA-iG-rAA"/>
@@ -167,19 +176,19 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLL-uM-tNv">
-                                <rect key="frame" x="112" y="177" width="800" height="97"/>
+                                <rect key="frame" x="112" y="187" width="800" height="94.5"/>
                                 <string key="text">Vietnam Star xin lỗi vì chưa đạt được mong đợi của quý khách.
 Quý khách vui lòng cho chúng tôi biết bộ phận khiến bạn chưa hài lòng khi trải nghiệm dịch vụ tại Vietnam Star:</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <fontDescription key="fontDescription" name="CorporateAVN-Regular" family="CorpoA (VN)" pointSize="27"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VZw-pB-DN7">
-                                <rect key="frame" x="112" y="334" width="200" height="43"/>
+                                <rect key="frame" x="112" y="341.5" width="200" height="43"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Xưởng dịch vụ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Tj-Wj-YF7">
-                                        <rect key="frame" x="58" y="9.5" width="125.5" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <rect key="frame" x="51" y="8" width="132.5" height="27"/>
+                                        <fontDescription key="fontDescription" name="CorporateSVN-Regular" family="CorpoS (VN)" pointSize="23"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -228,7 +237,7 @@ Quý khách vui lòng cho chúng tôi biết bộ phận khiến bạn chưa hà
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HiP-BK-USS">
-                                <rect key="frame" x="112" y="413" width="250" height="43"/>
+                                <rect key="frame" x="112" y="420.5" width="250" height="43"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GTI-bP-htz">
                                         <rect key="frame" x="0.0" y="0.0" width="43" height="43"/>
@@ -256,8 +265,8 @@ Quý khách vui lòng cho chúng tôi biết bộ phận khiến bạn chưa hà
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dịch vụ bán hàng" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqO-l9-qQ1">
-                                        <rect key="frame" x="58" y="9.5" width="175.5" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <rect key="frame" x="51" y="8" width="182.5" height="27"/>
+                                        <fontDescription key="fontDescription" name="CorporateSVN-Regular" family="CorpoS (VN)" pointSize="23"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -277,7 +286,7 @@ Quý khách vui lòng cho chúng tôi biết bộ phận khiến bạn chưa hà
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sBz-Uf-rBX">
-                                <rect key="frame" x="112" y="492" width="200" height="43"/>
+                                <rect key="frame" x="112" y="499.5" width="250" height="43"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZY2-Yw-8K3">
                                         <rect key="frame" x="0.0" y="0.0" width="43" height="43"/>
@@ -305,8 +314,8 @@ Quý khách vui lòng cho chúng tôi biết bộ phận khiến bạn chưa hà
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cở sở vật chất" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fpx-vt-2BC">
-                                        <rect key="frame" x="58.5" y="9.5" width="125" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <rect key="frame" x="51" y="8" width="155.5" height="27"/>
+                                        <fontDescription key="fontDescription" name="CorporateSVN-Regular" family="CorpoS (VN)" pointSize="23"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -318,16 +327,15 @@ Quý khách vui lòng cho chúng tôi biết bộ phận khiến bạn chưa hà
                                     <constraint firstItem="Fpx-vt-2BC" firstAttribute="centerY" secondItem="YX1-ry-toc" secondAttribute="centerY" id="BVo-nV-vHc"/>
                                     <constraint firstItem="ZY2-Yw-8K3" firstAttribute="leading" secondItem="sBz-Uf-rBX" secondAttribute="leading" id="BmU-8N-PZ9"/>
                                     <constraint firstAttribute="bottom" secondItem="ZY2-Yw-8K3" secondAttribute="bottom" id="KGp-SE-0pn"/>
-                                    <constraint firstAttribute="trailing" secondItem="Fpx-vt-2BC" secondAttribute="trailing" constant="16.5" id="Nws-YC-CvI"/>
                                     <constraint firstItem="YX1-ry-toc" firstAttribute="top" secondItem="sBz-Uf-rBX" secondAttribute="top" id="R2G-Nd-V19"/>
                                     <constraint firstItem="YX1-ry-toc" firstAttribute="leading" secondItem="sBz-Uf-rBX" secondAttribute="leading" id="YnE-TM-DVE"/>
-                                    <constraint firstAttribute="width" constant="200" id="eqJ-Jk-lKM"/>
+                                    <constraint firstAttribute="width" constant="250" id="eqJ-Jk-lKM"/>
                                     <constraint firstItem="ZY2-Yw-8K3" firstAttribute="top" secondItem="sBz-Uf-rBX" secondAttribute="top" id="gtN-oJ-pQW"/>
                                     <constraint firstItem="Fpx-vt-2BC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="YX1-ry-toc" secondAttribute="trailing" constant="8" symbolic="YES" id="jRs-ph-wV7"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nfh-iR-6cg">
-                                <rect key="frame" x="512" y="334" width="250" height="43"/>
+                                <rect key="frame" x="512" y="341.5" width="250" height="43"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GRj-a8-ICD">
                                         <rect key="frame" x="0.0" y="0.0" width="43" height="43"/>
@@ -355,8 +363,8 @@ Quý khách vui lòng cho chúng tôi biết bộ phận khiến bạn chưa hà
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bộ phận đón tiếp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMA-ce-Iht">
-                                        <rect key="frame" x="59.5" y="9.5" width="147" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <rect key="frame" x="59.5" y="8" width="178.5" height="27"/>
+                                        <fontDescription key="fontDescription" name="CorporateSVN-Regular" family="CorpoS (VN)" pointSize="23"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -377,7 +385,7 @@ Quý khách vui lòng cho chúng tôi biết bộ phận khiến bạn chưa hà
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jIa-I9-JBn">
-                                <rect key="frame" x="512" y="413" width="250" height="43"/>
+                                <rect key="frame" x="512" y="420.5" width="250" height="43"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="30p-Ve-wmC">
                                         <rect key="frame" x="0.0" y="0.0" width="43" height="43"/>
@@ -405,8 +413,8 @@ Quý khách vui lòng cho chúng tôi biết bộ phận khiến bạn chưa hà
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dịch vụ trà nước" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJ9-rP-NN3">
-                                        <rect key="frame" x="59.5" y="9.5" width="141.5" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <rect key="frame" x="59.5" y="8" width="174" height="27"/>
+                                        <fontDescription key="fontDescription" name="CorporateSVN-Regular" family="CorpoS (VN)" pointSize="23"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -432,7 +440,7 @@ Quý khách vui lòng cho chúng tôi biết bộ phận khiến bạn chưa hà
                                     <constraint firstAttribute="width" constant="400" id="Z1G-Sn-osx"/>
                                     <constraint firstAttribute="height" constant="60" id="s2O-RJ-qVQ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="CorporateSVN-Regular" family="CorpoS (VN)" pointSize="31"/>
                                 <state key="normal" title="Tiếp tục">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -461,9 +469,10 @@ Quý khách vui lòng cho chúng tôi biết bộ phận khiến bạn chưa hà
                             <constraint firstItem="Um1-nE-jqg" firstAttribute="leading" secondItem="vhr-9G-a1c" secondAttribute="leading" id="bNY-kr-y7T"/>
                             <constraint firstItem="KLL-uM-tNv" firstAttribute="leading" secondItem="Rpg-oa-UCJ" secondAttribute="leading" constant="112" id="evx-lV-QaC"/>
                             <constraint firstItem="nfh-iR-6cg" firstAttribute="centerY" secondItem="VZw-pB-DN7" secondAttribute="centerY" id="gwe-GN-Fu4"/>
-                            <constraint firstItem="KLL-uM-tNv" firstAttribute="top" secondItem="Um1-nE-jqg" secondAttribute="bottom" constant="20" id="jlR-iD-R2b"/>
+                            <constraint firstItem="KLL-uM-tNv" firstAttribute="top" secondItem="Um1-nE-jqg" secondAttribute="bottom" constant="50" id="jlR-iD-R2b"/>
                             <constraint firstItem="sBz-Uf-rBX" firstAttribute="top" secondItem="HiP-BK-USS" secondAttribute="bottom" constant="36" id="tmD-Dx-xRz"/>
                             <constraint firstItem="Rpg-oa-UCJ" firstAttribute="bottom" secondItem="5dk-bQ-Oh8" secondAttribute="bottom" constant="40" id="u1p-8k-xKE"/>
+                            <constraint firstItem="Fpx-vt-2BC" firstAttribute="leading" secondItem="eqO-l9-qQ1" secondAttribute="leading" id="vMg-XH-PZJ"/>
                             <constraint firstItem="Rpg-oa-UCJ" firstAttribute="trailing" secondItem="KLL-uM-tNv" secondAttribute="trailing" constant="112" id="vbm-hR-YSz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Rpg-oa-UCJ"/>
@@ -515,31 +524,31 @@ Quý khách vui lòng cho chúng tôi biết bộ phận khiến bạn chưa hà
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MvI-iz-QcQ">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="157"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="137"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_mercedes" translatesAutoresizingMaskIntoConstraints="NO" id="1hb-uN-peK">
-                                        <rect key="frame" x="120" y="92" width="220" height="65"/>
+                                        <rect key="frame" x="120" y="70" width="220" height="65"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="65" id="Fux-Wr-mr5"/>
                                             <constraint firstAttribute="width" constant="220" id="W1s-YO-VZu"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_circle" translatesAutoresizingMaskIntoConstraints="NO" id="Cmc-Ha-YkL">
-                                        <rect key="frame" x="860" y="102.5" width="44" height="44"/>
+                                        <rect key="frame" x="860" y="80.5" width="44" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="44" id="BQ2-os-Cji"/>
                                             <constraint firstAttribute="height" constant="44" id="xuU-Rs-4I6"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vietnam Star Automobile" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Mu-gz-K0I">
-                                        <rect key="frame" x="694.5" y="106.5" width="150.5" height="16"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <rect key="frame" x="678.5" y="84.5" width="166.5" height="17"/>
+                                        <fontDescription key="fontDescription" name="CorporateSVN-Regular" family="CorpoS (VN)" pointSize="15"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Điện thoại: 18006142" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHR-JL-wZ6">
-                                        <rect key="frame" x="715.5" y="129.5" width="129.5" height="16"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <rect key="frame" x="701.5" y="108.5" width="143.5" height="17"/>
+                                        <fontDescription key="fontDescription" name="CorporateSVN-Regular" family="CorpoS (VN)" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -547,7 +556,7 @@ Quý khách vui lòng cho chúng tôi biết bộ phận khiến bạn chưa hà
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="wHR-JL-wZ6" firstAttribute="top" secondItem="3Mu-gz-K0I" secondAttribute="bottom" constant="7" id="9hp-pj-bgi"/>
-                                    <constraint firstItem="1hb-uN-peK" firstAttribute="top" secondItem="MvI-iz-QcQ" secondAttribute="top" constant="92" id="GRb-Y3-QVk"/>
+                                    <constraint firstItem="1hb-uN-peK" firstAttribute="top" secondItem="MvI-iz-QcQ" secondAttribute="top" constant="70" id="GRb-Y3-QVk"/>
                                     <constraint firstAttribute="trailing" secondItem="Cmc-Ha-YkL" secondAttribute="trailing" constant="120" id="JTo-rl-2ot"/>
                                     <constraint firstItem="3Mu-gz-K0I" firstAttribute="trailing" secondItem="wHR-JL-wZ6" secondAttribute="trailing" id="XvD-aD-XbS"/>
                                     <constraint firstItem="wHR-JL-wZ6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1hb-uN-peK" secondAttribute="trailing" constant="8" symbolic="YES" id="ZPd-zV-1wf"/>
@@ -556,7 +565,7 @@ Quý khách vui lòng cho chúng tôi biết bộ phận khiến bạn chưa hà
                                     <constraint firstItem="3Mu-gz-K0I" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1hb-uN-peK" secondAttribute="trailing" constant="8" symbolic="YES" id="eqV-9P-Ise"/>
                                     <constraint firstItem="Cmc-Ha-YkL" firstAttribute="top" secondItem="3Mu-gz-K0I" secondAttribute="top" constant="-4" id="qy6-Cv-tzh"/>
                                     <constraint firstItem="Cmc-Ha-YkL" firstAttribute="leading" secondItem="3Mu-gz-K0I" secondAttribute="trailing" constant="15" id="rIh-0q-mgh"/>
-                                    <constraint firstAttribute="height" constant="157" id="tS2-Fr-W9N"/>
+                                    <constraint firstAttribute="height" constant="137" id="tS2-Fr-W9N"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lZn-vO-BtM">
@@ -569,8 +578,8 @@ Quý khách vui lòng cho chúng tôi biết bộ phận khiến bạn chưa hà
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chưa hài lòng" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frm-KE-lZo">
-                                        <rect key="frame" x="49.5" y="182.5" width="131.5" height="26.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <rect key="frame" x="39.5" y="181" width="151.5" height="28"/>
+                                        <fontDescription key="fontDescription" name="CorporateSVN-Regular" family="CorpoS (VN)" pointSize="24"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -607,8 +616,8 @@ Quý khách vui lòng cho chúng tôi biết bộ phận khiến bạn chưa hà
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hài lòng" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UCc-pL-31h">
-                                        <rect key="frame" x="76" y="182.5" width="78" height="26.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <rect key="frame" x="71" y="181" width="88.5" height="28"/>
+                                        <fontDescription key="fontDescription" name="CorporateSVN-Regular" family="CorpoS (VN)" pointSize="24"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -635,8 +644,8 @@ Quý khách vui lòng cho chúng tôi biết bộ phận khiến bạn chưa hà
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bạn có hài lòng với dịch vụ của chúng tôi không?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBu-iN-gZp">
-                                <rect key="frame" x="10" y="238" width="1004" height="41"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="34"/>
+                                <rect key="frame" x="10" y="239" width="1004" height="40"/>
+                                <fontDescription key="fontDescription" name="CorporateAVN-Regular" family="CorpoA (VN)" pointSize="34"/>
                                 <color key="textColor" red="1" green="0.9882352941176471" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -699,31 +708,31 @@ Quý khách vui lòng cho chúng tôi biết bộ phận khiến bạn chưa hà
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hwM-RA-Ja5">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="157"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="137"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_mercedes" translatesAutoresizingMaskIntoConstraints="NO" id="rVh-xb-tiC">
-                                        <rect key="frame" x="120" y="92" width="220" height="65"/>
+                                        <rect key="frame" x="120" y="70" width="220" height="65"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="65" id="QUo-7Y-PyG"/>
                                             <constraint firstAttribute="width" constant="220" id="x8Y-1l-09y"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_circle" translatesAutoresizingMaskIntoConstraints="NO" id="zSa-RM-sJq">
-                                        <rect key="frame" x="860" y="102.5" width="44" height="44"/>
+                                        <rect key="frame" x="860" y="80.5" width="44" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="FuU-x4-awv"/>
                                             <constraint firstAttribute="width" constant="44" id="MF1-gt-YL3"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vietnam Star Automobile" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Edh-ch-eW9">
-                                        <rect key="frame" x="694.5" y="106.5" width="150.5" height="16"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <rect key="frame" x="678.5" y="84.5" width="166.5" height="17"/>
+                                        <fontDescription key="fontDescription" name="CorporateSVN-Regular" family="CorpoS (VN)" pointSize="15"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Điện thoại: 18006142" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WkC-GH-qn6">
-                                        <rect key="frame" x="715.5" y="129.5" width="129.5" height="16"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <rect key="frame" x="701.5" y="108.5" width="143.5" height="17"/>
+                                        <fontDescription key="fontDescription" name="CorporateSVN-Regular" family="CorpoS (VN)" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -735,9 +744,9 @@ Quý khách vui lòng cho chúng tôi biết bộ phận khiến bạn chưa hà
                                     <constraint firstItem="Edh-ch-eW9" firstAttribute="trailing" secondItem="WkC-GH-qn6" secondAttribute="trailing" id="7Qa-7h-Sho"/>
                                     <constraint firstItem="WkC-GH-qn6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="rVh-xb-tiC" secondAttribute="trailing" constant="8" symbolic="YES" id="Ccv-mQ-Jqe"/>
                                     <constraint firstAttribute="trailing" secondItem="zSa-RM-sJq" secondAttribute="trailing" constant="120" id="Daz-5p-52O"/>
-                                    <constraint firstAttribute="height" constant="157" id="Ivo-wr-CsF"/>
+                                    <constraint firstAttribute="height" constant="137" id="Ivo-wr-CsF"/>
                                     <constraint firstItem="zSa-RM-sJq" firstAttribute="leading" secondItem="Edh-ch-eW9" secondAttribute="trailing" constant="15" id="Ne4-cH-xxb"/>
-                                    <constraint firstItem="rVh-xb-tiC" firstAttribute="top" secondItem="hwM-RA-Ja5" secondAttribute="top" constant="92" id="QnU-eo-x8G"/>
+                                    <constraint firstItem="rVh-xb-tiC" firstAttribute="top" secondItem="hwM-RA-Ja5" secondAttribute="top" constant="70" id="QnU-eo-x8G"/>
                                     <constraint firstItem="Edh-ch-eW9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="rVh-xb-tiC" secondAttribute="trailing" constant="8" symbolic="YES" id="UFX-rj-E1T"/>
                                     <constraint firstItem="WkC-GH-qn6" firstAttribute="top" secondItem="Edh-ch-eW9" secondAttribute="bottom" constant="7" id="Xh5-cb-ajL"/>
                                     <constraint firstItem="zSa-RM-sJq" firstAttribute="centerY" secondItem="rVh-xb-tiC" secondAttribute="centerY" id="vPa-EL-JEN"/>
@@ -774,8 +783,8 @@ Quý khách vui lòng cho chúng tôi biết bộ phận khiến bạn chưa hà
                                 <rect key="frame" x="153" y="251.5" width="718" height="265"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bạn có muốn thực hiện đánh giá lại?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C1E-Uy-wXb">
-                                        <rect key="frame" x="128.5" y="70" width="461" height="36"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <rect key="frame" x="104.5" y="70" width="509" height="38.5"/>
+                                        <fontDescription key="fontDescription" name="CorporateAVN-Regular" family="CorpoA (VN)" pointSize="34"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -786,7 +795,7 @@ Quý khách vui lòng cho chúng tôi biết bộ phận khiến bạn chưa hà
                                             <constraint firstAttribute="height" constant="55" id="YRC-6H-9g5"/>
                                             <constraint firstAttribute="width" constant="193" id="d7v-1F-nck"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <fontDescription key="fontDescription" name="CorporateSVN-Regular" family="CorpoS (VN)" pointSize="27"/>
                                         <state key="normal" title="Có">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -801,7 +810,7 @@ Quý khách vui lòng cho chúng tôi biết bộ phận khiến bạn chưa hà
                                             <constraint firstAttribute="height" constant="55" id="GJQ-4f-dby"/>
                                             <constraint firstAttribute="width" constant="193" id="u68-77-uLK"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <fontDescription key="fontDescription" name="CorporateSVN-Regular" family="CorpoS (VN)" pointSize="27"/>
                                         <state key="normal" title="Không">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>

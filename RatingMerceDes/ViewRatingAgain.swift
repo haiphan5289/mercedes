@@ -27,6 +27,13 @@ class ViewRatingAgain: UIViewController {
         
         btYes.clipsToBounds = true
         btYes.layer.cornerRadius = 5
+        
+        self.btNo.clipsToBounds = true
+               self.btNo.layer.borderWidth = 2
+               self.btNo.layer.borderColor = #colorLiteral(red: 0, green: 0.6901960784, blue: 0.9529411765, alpha: 1)
+    }
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+          return .lightContent
     }
     
     @IBAction func btNo(_ sender: UIButton) {

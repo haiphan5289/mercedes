@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol ViewRatingSadListner {
+    func dismiss()
+}
+
 class ViewRatingSad: UIViewController {
 
     @IBOutlet weak var btNext: UIButton!
@@ -27,6 +31,7 @@ class ViewRatingSad: UIViewController {
     @IBOutlet weak var vWater: UIView!
     @IBOutlet weak var imgWater: UIImageView!
     var listService: [String] = []
+    var listner: ViewRatingSadListner?
     override func viewDidLoad() {
         super.viewDidLoad()
         btNext.clipsToBounds = true
@@ -61,6 +66,7 @@ class ViewRatingSad: UIViewController {
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewResultRatingSad") as! ViewResultRatingSad
         vc.modalPresentationStyle = .fullScreen
         vc.listService = self.listService
+        vc.listner = self
         self.present(vc, animated: true, completion: nil)
     }
 
@@ -147,13 +153,28 @@ class ViewRatingSad: UIViewController {
         }
         
     }
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+          return .lightContent
+    }
     
     
 }
 extension ViewRatingSad: ViewRatingAgainAction {
     func dismiss() {
         self.dismiss(animated: true, completion: nil)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            self.listner?.dismiss()
+        }
     }
     
     
+}
+extension ViewRatingSad: ViewResultRatingSadListner {
+    func dismissViewResultRatingSadListner() {
+       
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+             self.dismiss(animated: true, completion: nil)
+            self.listner?.dismiss()
+        }
+    }
 }
