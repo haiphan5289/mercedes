@@ -313,7 +313,7 @@ Quý khách vui lòng cho chúng tôi biết bộ phận khiến bạn chưa hà
                                             <action selector="btDevices:" destination="HNM-yi-j2C" eventType="touchUpInside" id="KCq-Ms-eQI"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cở sở vật chất" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fpx-vt-2BC">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cơ sở vật chất" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fpx-vt-2BC">
                                         <rect key="frame" x="51" y="8" width="155.5" height="27"/>
                                         <fontDescription key="fontDescription" name="CorporateSVN-Regular" family="CorpoS (VN)" pointSize="23"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

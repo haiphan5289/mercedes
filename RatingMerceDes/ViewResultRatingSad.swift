@@ -140,8 +140,9 @@ extension ViewResultRatingSad: UICollectionViewDelegate, UICollectionViewDataSou
 }
 extension ViewResultRatingSad: ViewRatingAgainAction {
     func dismiss() {
-        self.dismiss(animated: true, completion: nil)
-        self.listner?.dismissViewResultRatingSadListner()
+//        self.dismiss(animated: true, completion: nil)
+//        self.listner?.dismissViewResultRatingSadListner()
+        self.presentViewHome()
     }
     
 }

@@ -102,12 +102,12 @@ class ViewRatingSad: UIViewController {
     @IBAction func btDevices(_ sender: Any) {
         if btDevies.isSelected {
             self.btDevies.isSelected = false
-            self.addList(isSelect: false, text: "Cở sở vật chất")
+            self.addList(isSelect: false, text: "Cơ sở vật chất")
             self.btDevies.setImage(UIImage(named: "ic_uncheck"), for: .normal)
             self.imgDevice.image = UIImage()
         } else {
             self.btDevies.isSelected = true
-            self.addList(isSelect: true, text: "Cở sở vật chất")
+            self.addList(isSelect: true, text: "Cơ sở vật chất")
             self.btDevies.setImage(UIImage(named: "check"), for: .normal)
             self.imgDevice.image = UIImage(named: "check")
         }
@@ -161,10 +161,7 @@ class ViewRatingSad: UIViewController {
 }
 extension ViewRatingSad: ViewRatingAgainAction {
     func dismiss() {
-        self.dismiss(animated: true, completion: nil)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-            self.listner?.dismiss()
-        }
+        self.presentViewHome()
     }
     
     
@@ -172,9 +169,20 @@ extension ViewRatingSad: ViewRatingAgainAction {
 extension ViewRatingSad: ViewResultRatingSadListner {
     func dismissViewResultRatingSadListner() {
        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-             self.dismiss(animated: true, completion: nil)
-            self.listner?.dismiss()
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+//             self.dismiss(animated: true, completion: nil)
+//            self.listner?.dismiss()
+//        }
+    }
+}
+extension UIViewController {
+    func presentViewHome() {
+        for v in self.children {
+            v.removeFromParent()
         }
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true, completion: nil)
+        
     }
 }

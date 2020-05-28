@@ -79,7 +79,8 @@ class ViewHappy: UIViewController {
                next_button.heightAnchor.constraint(equalToConstant: 54).isActive = true
         
         previous_button = UIButton(type: .system)
-        previous_button.setImage(UIImage(named: "ic_previous_light"), for: .normal)
+//        previous_button.setImage(UIImage(named: "ic_previous_light"), for: .normal)
+        previous_button.isHidden = true
         previous_button.addTarget(self, action: #selector(previous_page), for: .touchUpInside)
         self.view.addSubview(previous_button)
         
@@ -119,12 +120,14 @@ class ViewHappy: UIViewController {
             return
         }
         previous_button.setImage(UIImage(named: "previous_button"), for: .normal)
+        previous_button.isHidden = false
         //check nếu là page kế cuối
         if page_control.currentPage == self.array_page.count - 1 {
             //               page_bottom.constant = 40
             //               skip_top.constant = -40
 //            next_top.constant = -40
-            next_button.setImage(UIImage(named: "ic_next_light"), for: .normal)
+//            next_button.setImage(UIImage(named: "ic_next_light"), for: .normal)
+            next_button.isHidden = true
             UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseOut, animations: {
                 self.view.layoutIfNeeded()
             }, completion: nil)
@@ -141,12 +144,13 @@ class ViewHappy: UIViewController {
                    return
                }
             next_button.setImage(UIImage(named: "next_button"), for: .normal)
+            next_button.isHidden = false
             if page_control.currentPage == 1 {
                         //               page_bottom.constant = 40
                         //               skip_top.constant = -40
             //            next_top.constant = -40
 //                        next_button.setImage(UIImage(named: "ic_next_light"), for: .normal)
-                previous_button.setImage(UIImage(named: "ic_previous_light"), for: .normal)
+                previous_button.isHidden = true
                         UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseOut, animations: {
                             self.view.layoutIfNeeded()
                         }, completion: nil)
@@ -277,17 +281,21 @@ extension ViewHappy: UICollectionViewDelegate, UICollectionViewDataSource, UICol
 //            page_bottom.constant = -80
 //            skip_top.constant = -40
 //            next_top.constant = -40
-            next_button.setImage(UIImage(named: "ic_next_light"), for: .normal)
+//            next_button.setImage(UIImage(named: "ic_next_light"), for: .normal)
+            next_button.isHidden = true
             previous_button.setImage(UIImage(named: "previous_button"), for: .normal)
         } else if page_number == 0  {
 //            page_bottom.constant = -80
 //            skip_top.constant = 10
 //            next_top.constant = 10
             next_button.setImage(UIImage(named: "next_button"), for: .normal)
-            previous_button.setImage(UIImage(named: "ic_previous_light"), for: .normal)
+//            previous_button.setImage(UIImage(named: "ic_previous_light"), for: .normal)
+            previous_button.isHidden = true
         } else {
             previous_button.setImage(UIImage(named: "previous_button"), for: .normal)
             next_button.setImage(UIImage(named: "next_button"), for: .normal)
+            previous_button.isHidden = false
+            next_button.isHidden = false
         }
         UIView.animate(withDuration: 1, delay: 0, options: .curveEaseOut, animations: {
             self.view.layoutIfNeeded()
@@ -309,10 +317,11 @@ class page {
 
 extension ViewHappy: ViewRatingAgainAction {
     func dismiss() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-            self.dismiss(animated: true, completion: nil)
-            self.listner?.dismissViewHappyListner()
-        }
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+//            self.dismiss(animated: true, completion: nil)
+//            self.listner?.dismissViewHappyListner()
+//        }
+        self.presentViewHome()
         
     }
     
